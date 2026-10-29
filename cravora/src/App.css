@@ -1426,3 +1426,37 @@ input:focus-visible {
     padding: 9px;
   }
 }
+
+/* Mobile Checkout Layout Fix */
+@media (max-width: 560px) {
+  .checkout-layout,
+  .checkout-grid,
+  .checkout-content,
+  .checkout-container .grid,
+  .checkout-page .grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .checkout-form,
+  .delivery-information,
+  .delivery-form,
+  .order-summary,
+  .checkout-summary {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .checkout-form input,
+  .checkout-form textarea,
+  .delivery-information input,
+  .delivery-information textarea,
+  .delivery-form input,
+  .delivery-form textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
