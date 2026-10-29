@@ -1427,6 +1427,18 @@ input:focus-visible {
   }
 }
 
+/* Checkout Cards: One Below Another */
+@media (min-width: 561px) {
+  .checkout-layout,
+  .checkout-grid,
+  .checkout-content,
+  .checkout-container .grid,
+  .checkout-page .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Mobile Responsive Checkout */
 @media (max-width: 560px) {
   .checkout-layout,
   .checkout-grid,
